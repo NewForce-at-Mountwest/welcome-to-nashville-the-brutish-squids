@@ -1,0 +1,19 @@
+#main-header {
+    text-align: center;
+}
+
+#input-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-item {
+    margin: 1em
+}
+
+#result-box {
+    border: 1px solid black;
+    width: 50vw;
+}
+
+
