@@ -11,7 +11,7 @@ const htmlBuilder = {
         <button id="brewery-btn">Search</button>
         </div>
         <div class="input-item">
-        <input type="text" placeholder="concerts by genre">
+        <input id="concert-genre" type="text" placeholder="concerts by genre">
         <button id="concert-btn">Search</button>
         </div>
         </div>
