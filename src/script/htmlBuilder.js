@@ -3,7 +3,7 @@ const htmlBuilder = {
     return `
     <div id="input-box">
     <div class="input-item">
-    <input type="text" placeholder="parks by Feature">
+    <input id="park-input" type="text" placeholder="parks by Feature">
     <button id="park-btn">Search</button>
     </div>
     <div class="input-item">
@@ -27,3 +27,9 @@ const htmlBuilder = {
     }
 
 }
+
+const ParksLi = {
+parksItem: () => {
+ return `<li>${parks}</li>`
+}}
+
