@@ -7,7 +7,7 @@ const htmlBuilder = {
     <button id="park-btn">Search</button>
     </div>
     <div class="input-item">
-    <input type="text" placeholder="breweries">
+    <input id = "breweryInput" type="text" placeholder="breweries by name">
     <button id="brewery-btn">Search</button>
     </div>
     <div class="input-item">
@@ -18,10 +18,11 @@ const htmlBuilder = {
     `
     },
 
-    buildResultField: () => {
+    buildResultField: (result) => {
         return `
         <div id="result-box">
         <h3>Results:</h3>
+        ${result}
         </div>
         `
     }
