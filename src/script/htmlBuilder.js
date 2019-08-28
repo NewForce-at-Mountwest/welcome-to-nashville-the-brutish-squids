@@ -18,11 +18,11 @@ const htmlBuilder = {
     `
     },
 
-    buildResultField: (result) => {
+    buildResultField: (string) => {
         return `
         <div id="result-box">
         <h3>Results:</h3>
-        ${result}
+        ${string}
         </div>
         `
     }
