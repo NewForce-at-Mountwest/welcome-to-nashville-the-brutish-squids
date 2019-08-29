@@ -29,10 +29,10 @@ const htmlBuilder = {
 }
 
 
-function parkList() {
+function parkList(park) {
   var pListString = ""
   pListString += `<div class="park-item"><ol>`  
-  var parkItem = `<li>${parkApi.getAllParks()}</li>`
+  var parkItem = `<li>${park.park_name}</li>`
   pListString += parkItem
   pListString += `</ol></div>`
   return pListString
