@@ -30,13 +30,10 @@ const htmlBuilder = {
 
 
 function parkList() {
-  let pListString = ""
-  console.log("park list")
-  pListString += `<div class="park-list"><ol>`
-  for (i = 0; i < parkApi.getParks.length; i++) {
-    var parkItem = `<li>${parkApi.getParksPlayground()}</li>`
-    pListString += `${parkItem}`
-  }
+  var pListString = ""
+  pListString += `<div class="park-item"><ol>`  
+  var parkItem = `<li>${parkApi.getAllParks()}</li>`
+  pListString += parkItem
   pListString += `</ol></div>`
   return pListString
 }
