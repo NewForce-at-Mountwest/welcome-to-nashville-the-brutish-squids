@@ -6,7 +6,6 @@
             .then(parks=>{
                 console.log(parks)
                 parks.forEach(park =>{
-                    // debugger
                     document.querySelector("#result-box").innerHTML += parkList(park)
               })
     })
