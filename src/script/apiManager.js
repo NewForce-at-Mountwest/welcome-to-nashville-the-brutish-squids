@@ -9,26 +9,25 @@ const APIManagerBrew = {
                     // loop through array of breweries returned from fetch
                   breweryToPrint.forEach(singleBrewery =>
                     {
-                    // return Brewery name in string???
-                        // console.log(singleBrewery.name)
-const  breweryString = `<p>${singleBrewery.name}</p>`
-console.log(breweryString)
-return breweryString
+                    // return Brewery name in string
+                        // console.log(singleBrewery)
+const  breweryString = `<p>${singleBrewery.name}<br>${singleBrewery.street}</p>`
+// print results of search to the DOM
+document.querySelector("#main-container").innerHTML += htmlBuilder.buildResultField (breweryString)
                     }) 
                 })
     }
 }
 
 // add event listener to brewery button to search by brewery name in search input at click of serach button
-mainContainer = document.querySelector("#main-container")
-mainContainer.addEventListener("click",function()
+mainBContainer = document.querySelector("#main-container")
+mainBContainer.addEventListener("click",function()
 {
     if (event.target.id === "brewery-btn"){
         // get input value from search box
         const breweryName = document.querySelector("#breweryInput").value;
-//     // return brewery by name by API manager function
+//     // return brewery by name by API manager function by using search input value as paramerter
 APIManagerBrew.getBreweries(breweryName)
-
 }
 // clear brewery name input field
 document.querySelector("#breweryInput").value = "";

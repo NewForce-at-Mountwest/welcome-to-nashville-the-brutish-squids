@@ -1,19 +1,25 @@
+/* Center align the main-header */
 #main-header {
     text-align: center;
 }
 
+/* Flex the input div to align the input boxes in a column */
 #input-box {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
+/* Create a margin around eah input field  */
 .input-item {
     margin: 1em
 }
 
+/* create a border and set width on our results field */
 #result-box {
     border: 1px solid black;
     width: 50vw;
+    align-items: center;
 }
 
 
