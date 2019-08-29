@@ -18,8 +18,7 @@
 /* create a border and set width on our results field */
 #result-box {
     display:flex;
-    border: 1px solid black;
-    width: 50vw;
+    flex-direction: column;
 }
 
 

@@ -13,6 +13,7 @@ meetupClickTarget.addEventListener("click", function(){
         console.log("hey")
         const meetupInput = document.querySelector("#meetup-input").value;
 
+
 fetch(`https://www.eventbriteapi.com/v3/events/search/?q=nashville_${meetupInput}&token=WAHOFTIBVA2MSM2ENN2X`, {
  headers: {
    "Authorization": `Bearer WAHOFTIBVA2MSM2ENN2X`,
@@ -23,15 +24,21 @@ fetch(`https://www.eventbriteapi.com/v3/events/search/?q=nashville_${meetupInput
 .then(arrayOfMeetups => {
     arrayOfMeetups.events.forEach(singleMeetup => {
         console.log(singleMeetup.name.text)
-        return arrayOfMeetups
-
+        const meetupString = `<p>${singleMeetup.name.text}</p>`
+        document.querySelector("#result-box").innerHTML += meetupString
+    
+        
     })
 
 })
 
     }
 })
-// const meetupString = `<p>${arrayOfMeetups.name}<br>${arrayOfMeetups.text}</p>`
+
+
+
+
+
 // create apiManager object and method
 const APIManagerBrew = {
     getBreweries (breweryName) {
@@ -72,7 +79,4 @@ document.querySelector("#breweryInput").value = "";
 
 
 
-<<<<<<< HEAD
-=======
  
->>>>>>> master
