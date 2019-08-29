@@ -14,6 +14,10 @@ const htmlBuilder = {
     <input type="text" placeholder="concerts by genre">
     <button id="concert-btn">Search</button>
     </div>
+    <div class="input-item">
+    <input type="text" id = "meetup-input" placeholder="Meetups">
+    <button id="meetups-btn">Search</button>
+    </div>
     </div>
     `
     },
