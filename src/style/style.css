@@ -19,10 +19,11 @@
 #result-box {
     border: 1px solid black;
     width: 50vw;
+    display:flex;
+    flex-direction: column;
 }
 
 .park-item{
-    margin: 1em;
-    
+    margin-left: 1em;
 }
 
