@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-/* Create a margin around eah input field  */
+/* Create a margin around each input field  */
 .input-item {
     margin: 1em
 }
@@ -20,10 +20,15 @@
     border: 1px solid black;
     width: 50vw;
     display:flex;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .park-item{
     margin-left: 1em;
 }
 
+#result-header{
+    text-align: center;
+}

@@ -19,13 +19,13 @@ const htmlBuilder = {
     <input type="text" placeholder="concerts by genre">
     <button id="concert-btn">Search</button>
     </div>
-    <h3 id="meetup-heading">Find a Cool Meet Up</h3>
     <div class="input-item">
+    <h3 id="meetup-heading">Find a Cool Meet Up</h3>
     <input type="text" id = "meetup-input" placeholder="Meetups">
     <button id="meetups-btn">Search</button>
     </div>
     </div>
-    `
+      `
     },
 
     // build HTML universal function for results box with a parameter for individual strings
