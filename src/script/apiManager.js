@@ -1,11 +1,14 @@
-
+//park api manager
     const parkApi = {
+        //function to call with parameter of search item
         getAllParks:(parkSearchString) => { 
             return fetch(`http://localhost:3000/parks${parkSearchString}`)
             .then(response => response.json())
             .then(parks=>{
+                //all parks have been gotten
                 console.log(parks)
                 parks.forEach(park =>{
+                    //put filtered parks in html
                 document.querySelector("#result-box").innerHTML += parkList(park)
               })
     })
