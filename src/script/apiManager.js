@@ -53,10 +53,9 @@ const APIManagerBrew = {
                   breweryToPrint.forEach(singleBrewery =>
                     {
                     // return Brewery name in string
-                        // console.log(singleBrewery)
 const  breweryString = `<p>${singleBrewery.name}<br>${singleBrewery.street}</p>`
 // print results of search to the DOM
-document.querySelector("#main-container").innerHTML += htmlBuilder.buildResultField (breweryString)
+document.querySelector("#result-box").innerHTML += breweryString
                     }) 
                 })
     }
@@ -73,9 +72,11 @@ mainBContainer.addEventListener("click",function()
 APIManagerBrew.getBreweries(breweryName)
 }
 // clear brewery name input field
-document.querySelector("#breweryInput").value = "";
-    }
-)
+document.querySelector("#breweryInput").value = ""
+// clear previous results at each search click
+document.querySelector("#result-box").innerHTML = ``
+
+})
   
 
 
