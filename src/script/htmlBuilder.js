@@ -18,8 +18,8 @@ const htmlBuilder = {
     <input id="concert-genre" type="text" placeholder="concerts by genre">
     <button id="concert-btn">Search</button>
     </div>
-    <h3 id="meetup-heading">Find a Cool Meet Up</h3>
     <div class="input-item">
+    <h3 id="meetup-heading">Find a Cool Meet Up</h3>
     <input type="text" id = "meetup-input" placeholder="Meetups">
     <button id="meetups-btn">Search</button>
     </div>
@@ -41,6 +41,7 @@ const htmlBuilder = {
     }
     
     }
+      
 
 
 

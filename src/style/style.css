@@ -10,15 +10,18 @@
     align-items: center;
 }
 
-/* Create a margin around eah input field  */
+/* Create a margin around each input field  */
 .input-item {
     margin: 1em
 }
 
 /* create a border and set width on our results field */
 #result-box {
-    display:flex;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-
+#result-header{
+    text-align: center;
+}
