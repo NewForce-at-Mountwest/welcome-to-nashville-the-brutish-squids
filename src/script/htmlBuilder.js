@@ -4,8 +4,9 @@ const htmlBuilder = {
         return `
     <div id="input-box">
     <div class="input-item">
+
     <h3 id="park-heading">Find a Park</h3>
-    <input type="text" placeholder="parks by Feature">
+    <input id="park-input" type="text" placeholder="parks by Feature">
     <button id="park-btn">Search</button>
     </div>
     <div class="input-item">
@@ -46,3 +47,11 @@ const htmlBuilder = {
 
 
 
+function parkList(park) {
+  var pListString = ""
+  pListString += `<div class="park-item">`  
+  var parkItem = `<p><b>${park.park_name}</b> ${park.mapped_location_address}</p>`
+  pListString += parkItem
+  pListString += `</div>`
+  return pListString
+}

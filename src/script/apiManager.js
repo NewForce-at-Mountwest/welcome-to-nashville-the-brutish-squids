@@ -27,6 +27,21 @@ document.querySelector("#main-container").addEventListener("click", function() {
     }
 })
 
+//park api manager
+    const parkApi = {
+        //function to call with parameter of search item
+        getAllParks:(parkSearchString) => { 
+            return fetch(`http://localhost:3000/parks${parkSearchString}`)
+            .then(response => response.json())
+            .then(parks=>{
+                //all parks have been gotten
+                console.log(parks)
+                parks.forEach(park =>{
+                    //put filtered parks in html
+                document.querySelector("#result-box").innerHTML += parkList(park)
+              })
+    })
+    }}
 // put this back later
 
 // https://www.eventbriteapi.com/v3/events/search/?q=nashville_${meetupInput}&token=WAHOFTIBVA2MSM2ENN2X
