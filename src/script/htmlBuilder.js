@@ -28,14 +28,14 @@ const htmlBuilder = {
     },
 
     // build HTML universal function for results box with a parameter for individual strings
-    buildResultField: (string) => {
-        return `
-        <div id="result-box">
-        <h3>Results:</h3>
-        ${string}
-        </div>
-        `
-    }
+    // buildResultField: (string) => {
+    //     return `
+    //     <div id="result-box">
+    //     <h3>Results:</h3>
+    //     ${string}
+    //     </div>
+    //     `
+    // }
 
 }
 
