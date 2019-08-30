@@ -17,9 +17,16 @@
 
 /* create a border and set width on our results field */
 #result-box {
+    border: 1px solid black;
+    width: 50vw;
+    display:flex;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.park-item{
+    margin-left: 1em;
 }
 
 #result-header{
