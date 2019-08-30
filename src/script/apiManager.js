@@ -12,6 +12,7 @@ meetupClickTarget.addEventListener("click", function(){
     if(event.target.id === "meetups-btn"){
         console.log("hey")
         const meetupInput = document.querySelector("#meetup-input").value;
+    
 
 
 fetch(`https://www.eventbriteapi.com/v3/events/search/?q=nashville_${meetupInput}&token=WAHOFTIBVA2MSM2ENN2X`, {
@@ -25,13 +26,14 @@ fetch(`https://www.eventbriteapi.com/v3/events/search/?q=nashville_${meetupInput
     arrayOfMeetups.events.forEach(singleMeetup => {
         console.log(singleMeetup.name.text)
         const meetupString = `<p>${singleMeetup.name.text}</p>`
-        document.querySelector("#result-box").innerHTML += meetupString
-    
         
-    })
-
+        document.querySelector("#result-box").innerHTML += meetupString
+        
+        document.querySelector("#meetup-input").value = ""
+         })
+    
 })
-
+document.querySelector("#result-box").innerHTML = ``
     }
 })
 
