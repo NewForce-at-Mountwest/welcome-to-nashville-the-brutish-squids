@@ -1,3 +1,10 @@
+
+document.querySelector("#main-container").innerHTML = htmlBuilder.buildInputField ()
+
+
+
+
+
 var parkInput = document.querySelector("#park-btn")
 
 parkInput.addEventListener("click", function(){

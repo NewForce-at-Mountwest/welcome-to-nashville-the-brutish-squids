@@ -1,7 +1,7 @@
 // build main input box for input fields, headers, and search buttons
 const htmlBuilder = {
     buildInputField: () => {
-    return `
+        return `
     <div id="input-box">
     <div class="input-item">
 
@@ -16,7 +16,7 @@ const htmlBuilder = {
     </div>
     <div class="input-item">
     <h3 id="concert-heading">Find a Concert</h3>
-    <input type="text" placeholder="concerts by genre">
+    <input id="concert-genre" type="text" placeholder="concerts by genre">
     <button id="concert-btn">Search</button>
     </div>
     <div class="input-item">
@@ -25,19 +25,26 @@ const htmlBuilder = {
     <button id="meetups-btn">Search</button>
     </div>
     </div>
-      `
-    },
+    `
+        },
 
-    // build HTML universal function for results box with a parameter for individual strings
-    buildResultField: () => {
+    buildConcertResultField: (genre) => {
         return `
-        <div id="result-box">
-        <h3>Results:</h3>
+        <div id="concert-result-box">
+        <h4>Artist:</h4>
+        <p>${genre.name}</p>
+        <h4>Date of Concert:</h4>
+        <p>${genre.dates.start.localDate}</p>
+        <h4>Link to Buy Tickets:</h4>
+        <p>${genre.url}</p>
         </div>
         `
     }
+    
+    }
+      
 
-}
+
 
 
 function parkList(park) {
